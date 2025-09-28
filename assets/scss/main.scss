@@ -2,24 +2,9 @@
 // Main SCSS File
 // ===================================
 
-// Import Bootstrap (only the parts we need)
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-
-// Import our custom variables first
+// Import our custom variables and mixins first
 @import "variables";
 @import "mixins";
-
-// Import Bootstrap components
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/helpers";
-@import "bootstrap/scss/utilities/api";
 
 // Import our custom styles
 @import "animations";
