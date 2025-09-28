@@ -1,0 +1,252 @@
+// ===================================
+// Main SCSS File
+// ===================================
+
+// Import our custom variables and mixins first
+@import "variables";
+@import "mixins";
+
+// Import our custom styles
+@import "animations";
+@import "components";
+
+// ===================================
+// Base Styles
+// ===================================
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-normal;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  line-height: $line-height-normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+h1 { @include heading('4xl'); }
+h2 { @include heading('3xl'); }
+h3 { @include heading('2xl'); }
+h4 { @include heading('xl'); }
+h5 { @include heading('lg'); }
+h6 { @include heading('md'); }
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: $line-height-relaxed;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Selection
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--primary-hover);
+  }
+}
+
+// Focus styles
+:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+// Skip to main content (accessibility)
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: $border-radius;
+  z-index: 1000;
+  
+  &:focus {
+    top: 6px;
+  }
+}
+
+// Loading states
+.loading {
+  pointer-events: none;
+  opacity: 0.6;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--primary-color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+// Error states
+.error {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.success {
+  color: #22c55e;
+  border-color: #22c55e;
+}
+
+// Section spacing
+.section {
+  padding: 5rem 0;
+  
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    padding: 2rem 0;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  .section-title {
+    @include heading('3xl');
+    margin-bottom: 1rem;
+    
+    @include media-breakpoint-down(md) {
+      @include heading('2xl');
+    }
+  }
+  
+  .section-subtitle {
+    font-size: $font-size-lg;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: $line-height-relaxed;
+  }
+}
+
+// Container modifications
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  @include media-breakpoint-down(md) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+// Responsive utilities
+.d-block { display: block !important; }
+.d-inline-block { display: inline-block !important; }
+.d-flex { display: flex !important; }
+.d-none { display: none !important; }
+
+@include media-breakpoint-up(sm) {
+  .d-sm-block { display: block !important; }
+  .d-sm-flex { display: flex !important; }
+  .d-sm-none { display: none !important; }
+}
+
+@include media-breakpoint-up(md) {
+  .d-md-block { display: block !important; }
+  .d-md-flex { display: flex !important; }
+  .d-md-none { display: none !important; }
+}
+
+@include media-breakpoint-up(lg) {
+  .d-lg-block { display: block !important; }
+  .d-lg-flex { display: flex !important; }
+  .d-lg-none { display: none !important; }
+}
+
+// Print styles
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .header,
+  .footer {
+    display: none !important;
+  }
+}

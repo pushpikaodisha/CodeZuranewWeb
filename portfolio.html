@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CodeZura Creative Agency</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore our portfolio of stunning web designs, mobile apps, and branding projects. See how CodeZura transforms ideas into digital experiences.">
+    <meta name="keywords" content="portfolio, web design projects, mobile app development, branding, UI/UX design, creative agency work">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Portfolio - CodeZura Creative Agency">
+    <meta property="og:description" content="Explore our portfolio of stunning digital projects and creative solutions.">
+    <meta property="og:image" content="./assets/img/og-portfolio.jpg">
+    <meta property="og:url" content="https://codezura.com/portfolio.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" style="position: fixed; top: 0; left: 0; height: 3px; background: var(--primary-color); z-index: 9999; width: 0%; transition: width 0.3s ease;"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <strong>CodeZura</strong>
+                    </a>
+                    
+                    <!-- Desktop Navigation -->
+                    <ul class="navbar-nav d-none d-lg-flex flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Theme Toggle & Mobile Menu -->
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle me-3" aria-label="Toggle dark/light theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Navigation -->
+                <div class="navbar-collapse d-lg-none">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main style="padding-top: 100px;">
+        <!-- Page Header -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title scroll-animate" data-animation="fadeInUp">Our Portfolio</h1>
+                    <p class="section-subtitle scroll-animate" data-animation="fadeInUp" data-delay="0.2">
+                        Discover our latest projects and see how we've helped businesses transform their digital presence with innovative design and development solutions.
+                    </p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item scroll-animate" data-category="web,ecommerce" data-animation="fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="E-commerce Platform" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Modern E-commerce Platform</h5>
+                                <p class="portfolio-category">Web Design, E-commerce</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="portfolio-item scroll-animate" data-category="mobile" data-animation="fadeInUp" data-delay="0.1">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mobile Banking App" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Mobile Banking App</h5>
+                                <p class="portfolio-category">Mobile App, Fintech</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="portfolio-item scroll-animate" data-category="branding" data-animation="fadeInUp" data-delay="0.2">
+                        <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Brand Identity Design" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Complete Brand Identity</h5>
+                                <p class="portfolio-category">Branding, Logo Design</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="portfolio-item scroll-animate" data-category="web" data-animation="fadeInUp" data-delay="0.3">
+                        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Corporate Website" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Corporate Website Redesign</h5>
+                                <p class="portfolio-category">Web Design, Corporate</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="portfolio-item scroll-animate" data-category="mobile,web" data-animation="fadeInUp" data-delay="0.4">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Food Delivery Platform" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Food Delivery Platform</h5>
+                                <p class="portfolio-category">Mobile App, Web Platform</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="portfolio-item scroll-animate" data-category="branding,web" data-animation="fadeInUp" data-delay="0.5">
+                        <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Healthcare Platform" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Healthcare Digital Platform</h5>
+                                <p class="portfolio-category">Branding, Web Design</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 7 -->
+                    <div class="portfolio-item scroll-animate" data-category="web,ecommerce" data-animation="fadeInUp" data-delay="0.6">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fashion E-commerce" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Fashion E-commerce Store</h5>
+                                <p class="portfolio-category">E-commerce, Fashion</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 8 -->
+                    <div class="portfolio-item scroll-animate" data-category="mobile" data-animation="fadeInUp" data-delay="0.7">
+                        <img src="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fitness App" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Fitness Tracking App</h5>
+                                <p class="portfolio-category">Mobile App, Health</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 9 -->
+                    <div class="portfolio-item scroll-animate" data-category="branding" data-animation="fadeInUp" data-delay="0.8">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Restaurant Branding" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="portfolio-title">Restaurant Brand Identity</h5>
+                                <p class="portfolio-category">Branding, Restaurant</p>
+                                <div class="portfolio-links mt-3">
+                                    <a href="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="lightbox btn btn-sm btn-primary me-2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="project-single.html" class="btn btn-sm btn-outline">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-outline btn-lg" id="loadMore" disabled>
+                        <i class="fas fa-spinner animate-spin" style="display: none;"></i>
+                        <span>Load More Projects</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="section bg-secondary">
+            <div class="container">
+                <div class="text-center scroll-animate" data-animation="fadeInUp">
+                    <h2 class="mb-4">Ready to Start Your Project?</h2>
+                    <p class="mb-4 text-secondary">
+                        Let's discuss how we can help bring your vision to life with our expertise in design and development.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i>
+                            Start Your Project
+                        </a>
+                        <a href="services.html" class="btn btn-outline btn-lg">
+                            <i class="fas fa-info-circle"></i>
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeZura</h4>
+                    <p>We're a creative agency dedicated to crafting exceptional digital experiences that drive results and inspire innovation.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Development</a></li>
+                        <li><a href="services.html">Branding</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">SEO</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>123 Creative Street</li>
+                        <li>Design District, NY 10001</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Email: hello@codezura.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeZura. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top -->
+    <button class="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: var(--primary-color); color: white; border: none; border-radius: 50%; cursor: pointer; z-index: 1000; transition: all 0.3s ease;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

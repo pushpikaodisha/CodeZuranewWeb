@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | CodeZura</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Return to CodeZura's homepage to explore our creative agency services.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <strong>CodeZura</strong>
+                    </a>
+                    
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="error-page" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+        <div class="container">
+            <div class="error-content" style="max-width: 600px; margin: 0 auto;">
+                <!-- 404 Animation -->
+                <div class="error-animation mb-5">
+                    <div style="font-size: 120px; font-weight: 800; color: var(--primary-color); line-height: 1; margin-bottom: 1rem; font-family: var(--font-family-secondary);">
+                        4<span style="display: inline-block; animation: bounce 2s infinite;">0</span>4
+                    </div>
+                </div>
+                
+                <!-- Error Message -->
+                <h1 class="error-title mb-4" style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary);">
+                    Oops! Page Not Found
+                </h1>
+                
+                <p class="error-description mb-5" style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.6;">
+                    The page you're looking for doesn't exist or has been moved. 
+                    Don't worry, it happens to the best of us!
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="error-actions d-flex flex-wrap justify-content-center gap-3">
+                    <a href="index.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home me-2"></i>
+                        Back to Homepage
+                    </a>
+                    
+                    <a href="portfolio.html" class="btn btn-outline btn-lg">
+                        <i class="fas fa-folder me-2"></i>
+                        View Portfolio
+                    </a>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="error-search mt-5">
+                    <p class="mb-3" style="color: var(--text-secondary);">
+                        Or try searching for what you need:
+                    </p>
+                    <div class="search-form" style="max-width: 400px; margin: 0 auto;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search our site..." id="searchInput">
+                            <button class="btn btn-secondary" type="button" onclick="performSearch()">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Popular Links -->
+                <div class="popular-links mt-5 pt-5" style="border-top: 1px solid var(--border-color);">
+                    <h3 class="mb-4" style="font-size: 1.25rem; color: var(--text-primary);">
+                        Popular Pages
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <a href="about.html" class="popular-link d-flex align-items-center p-3" style="text-decoration: none; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 8px; transition: all 0.3s ease;">
+                                <div class="link-icon me-3" style="width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; color: var(--text-primary);">About Us</div>
+                                    <small>Learn about our team and mission</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <a href="services.html" class="popular-link d-flex align-items-center p-3" style="text-decoration: none; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 8px; transition: all 0.3s ease;">
+                                <div class="link-icon me-3" style="width: 40px; height: 40px; background: var(--secondary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; color: var(--text-primary);">Our Services</div>
+                                    <small>Discover what we can do for you</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <a href="portfolio.html" class="popular-link d-flex align-items-center p-3" style="text-decoration: none; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 8px; transition: all 0.3s ease;">
+                                <div class="link-icon me-3" style="width: 40px; height: 40px; background: #22c55e; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-folder"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; color: var(--text-primary);">Portfolio</div>
+                                    <small>View our latest projects</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <a href="contact.html" class="popular-link d-flex align-items-center p-3" style="text-decoration: none; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 8px; transition: all 0.3s ease;">
+                                <div class="link-icon me-3" style="width: 40px; height: 40px; background: #ef4444; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; color: var(--text-primary);">Contact</div>
+                                    <small>Get in touch with us</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Scripts -->
+    <script>
+        // Theme toggle functionality
+        function initTheme() {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateThemeIcon(currentTheme);
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const currentTheme = document.documentElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateThemeIcon(newTheme);
+                });
+            }
+        }
+        
+        function updateThemeIcon(theme) {
+            const themeToggle = document.querySelector('.theme-toggle i');
+            if (themeToggle) {
+                themeToggle.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+        }
+        
+        // Simple search function
+        function performSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const query = searchInput.value.trim();
+            
+            if (query) {
+                // For a real implementation, you might want to redirect to a search results page
+                // or use a search service like Algolia
+                alert(`Search functionality would be implemented here for: "${query}"`);
+                
+                // Example: redirect to home page with search query
+                // window.location.href = `index.html?search=${encodeURIComponent(query)}`;
+            }
+        }
+        
+        // Allow search on Enter key
+        document.getElementById('searchInput')?.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+        
+        // Add hover effects to popular links
+        document.querySelectorAll('.popular-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+        
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+    
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
